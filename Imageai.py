@@ -200,7 +200,7 @@ def run():
 
         # Resize image function
         def resize_image(image, target_size):
-            return image.resize(target_size, Image.ANTIALIAS)
+            return image.resize(target_size, Image.LANCZOS)
 
         # Iterate through the files in the specified folder
         for file in results.get('files', []):
